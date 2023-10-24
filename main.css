@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button,
+footer { /*Aqui definimos que o heades e section h2 da pagina usara a fonte personalizada do google*/
+    font-family: 'Bungee', sans-serif;
+    font-weight: normal; /*espaço entre as letras*/
+}
+
+body, input, textarea{ /*Aqui definimos todo o corpo da pagina usara a fonte personalizada do google / inputs e botoes tbm*/
+    font-family: 'Roboto', sans-serif;
+}
+
+header{/*header = titulo da pagina superior*/
+    padding: 16px 0;
+    background-color: rgb(250, 13, 5);
+    color: aliceblue;
+}
+
+header nav li{
+    display: inline; /*Deixa os menus alinhados lado a lado*/
+    margin: 16px; /*Distancia entre as duas palavras ou as palavras*/
+    font-size: 18px; /*fonte da letra*/
+}
+
+header nav li a {
+    color: rgba(255, 255, 255, 0.945);
+    text-decoration: none; /*Tira o underline do menu*/
+}
+
+.container {
+    max-width: 1240px; /*Define a largura maxima da pagina*/
+    width: 100%; /*Quantos % vai ocupar da largura especificada a cima*/
+    margin: 0 auto; /*define as margens laterais e de altura do conteudo, (0) é altura e (auto) define automatico o centro*/
+}
+
+header .container,
+section .container {
+    display: flex; /*coloca os menus ao lado do titulo do site*/
+    align-items: center;/*Cola os menus centralizados na vertical com o titulo da pagina*/
+    justify-content: space-between;/*joga os menus para extrema direita*/
+}
+
+.brands-list img{ /*classe criada para definir o tamanho das imagens*/
+    height: 24px;
+}
+
+.brands-list li{ /*classe das imagens "li" para definir alinhamento e espaçamento entre as imagens*/
+    display: inline; /*modo de exibição - imagens alinhadas lado a lado*/
+    padding: 16px; /*Espaçamento entre as imagens*/
+}
+
+section .container{
+    align-items: flex-start; /*Reescrevemos a regra do paragrafo para o mesmo comçar a ser escrito do topo da imagem para baixo*/
+}
+
+section { /*Caracteristicas da frase "Quem somos? + paragrafos"*/
+    padding: 24px 0;
+    color: rgb(250, 13, 5);;
+}
+
+section h2 { /*Caracteristicas da frase "Quem somos?* (h2)*/
+    margin-bottom: 16 px;
+}
+
+section p {/*Caracteristicas dos paragrafos*/
+    margin-bottom:  8px;
+}
+
+.capa-front { /*Caracteristicas da imagem de capa*/
+    height: 400px;
+    margin-right: 32px;
+}
+
+.social-links img{
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 16px;
+}
+
+.social-links a{/*Tirou uma sujeira do lado da logo que fica por conta da função de aparece um texto quando o mouse esta em cima*/
+    text-decoration: none;
+}
+
+#contact .container{/*# para buscar o ID que criamos (contact)*/
+    display: block;/*Colocar o fomulario em bloco separado das logos*/
+}
+
+.contact-methods{ /*classe criada para movimentas as logos seradas do formulario*/
+    display: flex;
+    justify-content: space-between /*ajusta fomulario / redes sociais / endereço de maneira igualitaria dentro da pagina*/
+}
+
+form input,
+form textarea,
+form button{ /*Aqui estilizamos o fomulario, caixa de texto e botão - tamanho e em bloco*/
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 16px;
+}
+
+form textarea{/*A caixa de texto do textarea ela tem como função deixa o usuario aumentar o tamanho dela na pagina e isso pode quebrar o layou, entao tiramos essa função deixando tamanho fixo*/
+    resize: none;
+    height: 180px; /*tamano da caixa de texto*/
+}
+
+form button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(250, 13, 5);
+    align-items: center;
+    border: none; /*Tira a borda do botão*/
+    cursor: pointer; /*Mostra para o usuario que é um botao clicavel, aparecendo a mãozinha no cursor do MOUSE*/
+}
+
+form button:hover{ /*hover = ativado quando o MOUSE passa em cima*/
+    background-color: blue;
+    text-decoration: underline;
+}
+
+section h3 {
+    margin-bottom: 16px; /*titulo do fomulario*/
+}
+
+input:focus, textarea:focus{/*focus= Quando o usuario clicar na caixa de texto, as bordas ficaram da cor escolhida*/
+    outline-color: rgb(250, 13, 5);/*outline = borda da caixa de texto*/
+}
+
+footer { /*Estilizando o rodapé do site*/
+    background-color: rgb(250, 13, 5);/*cor de fundo*/
+    color: aliceblue;/*cor letra*/
+    padding: 2px; /*espaço em cima e em baixo*/
+    font-size: 10px; /*tamanha da letra*/
+}
